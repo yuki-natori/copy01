@@ -1,3 +1,132 @@
-// Place all the styles related to the main controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// ヘッダー
+.header {
+  background: mediumaquamarine;
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__title {
+      margin: 25px 0 20px 124px;
+      a.title {
+        color: whitesmoke;
+        font-size: 25px;
+      }
+    }
+    &__menuy {
+    margin-right: 132px;
+    margin-top: 10px;
+      display: flex;
+      &__sample {
+        margin-right: 30px;
+        a.sample {
+          color: whitesmoke;
+        }
+      }
+      &__download {
+        a.download {
+          color: whitesmoke;
+        }
+      }
+    }
+  }
+}
+
+// タイトル
+.main-title {
+  padding: 260px 280px 400px 280px;
+  background: turquoise;
+  &__conteiner {
+    text-align: center;
+    margin: 0 122px;
+    h1.title {
+    color: whitesmoke;
+    font-size: 49px;
+    margin-bottom: 30px;
+    }
+    p.title {
+    color: whitesmoke;
+    }
+  }
+}
+
+// 人気のある記事
+.main-content {
+  &__article {
+    margin-bottom: 43px;
+    &__background {
+    background-image: url(bg.png);
+    background-size: cover;
+    height: 55px;
+    border-top: 1px solid;
+    }
+    
+    &__top {
+    display: flex;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding: 20px 0;
+    justify-content: center;
+      i.article {
+      font-size: 25px;
+      margin: 5px;
+      }
+      h4.article {
+        padding-right: 35px;
+      }
+    }
+    &__under {
+      padding-top: 5px;
+      ul.article {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 110px;
+        li.article {
+        padding-right: 10px;
+        position: relative;
+        margin-top: 35px;
+          img.article {
+          }
+          p.number {
+          background: black;
+          padding: 10px;
+          opacity: 0.5;
+          color: white;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          max-inline-size: min-content;
+          }
+          p.one {
+          background: yellow;
+          }
+          p.two {
+          background: whitesmoke;
+          }
+          p.three {
+          background: burlywood;
+          }
+          p.four {
+          background: black;
+          }
+          p.five {
+          background: black;
+          }
+          p.color {
+          background: darkturquoise;
+          display: table;
+          padding: 5px;
+          color: whitesmoke;
+          margin-top: 11px;
+          margin-left: 5px;
+          }
+          p.text {
+          padding: 0 0 6px 5px;
+          }
+        }
+      }
+    }
+    .bottom {
+      margin-bottom: 40px;
+    }
+  }
+}
