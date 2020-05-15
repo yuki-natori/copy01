@@ -17,7 +17,7 @@
 
 -# 人気のある記事
 .main-content
-  .main-content__article
+  .main-content__article.articlebottom
     .main-content__article__background
     .main-content__article__top
       = icon('fa','flag', class: "article")
@@ -57,7 +57,7 @@
     .main-content__article__top
       = icon('fa','clock', class: "article")
       %h4.article 最近の投稿
-    .main-content__article__under.bottom
+    .main-content__article__under.underbottom
       %ul.article
         %li.article
           =image_tag "MacBook-and-clutter.png", class: "article", hight: "220px", width: "215px"
@@ -88,6 +88,58 @@
 
 -# XeoryExtensionの特徴
 .main-feature
+  .main-feature__head
+    =icon("fa","check", class: "feature")
+    %h3.feature XeoryExtensionの特徴
+    %p.feature feature
+
+  -# モバイルレスポンシブ
+  .main-feature__responsive
+    .main-feature__responsive__message
+      %p.number 1
+      %h2.responsive モバイルレスポンシブ
+      %p.responsive Mobile Responsive
+      %p.text Xeory Extensionはレスポンシブデザインを採用しています。スマートフォンやタブレットなど各種デバイスで表示が最適化されます。
+      = link_to "#", class: "responsive" do
+        詳しく見る
+    .main-feature__responsive__img
+      = image_tag "macbook-at-the-coffee-shop.jpg", class: "responsive"
+
+  -# HTML5デザイン
+  .main-feature__responsive.reverse
+    .main-feature__responsive__message.sidemargin
+      %p.number 2
+      %h2.responsive HTML5デザイン
+      %p.responsive HTML5 Design
+      %p.text Xeory Extensionは最新のHTML5言語でデザイン及びコーディングがなされています。時代遅れのソースからは卒業しましょう。
+      = link_to "#", class: "responsive" do
+        詳しく見る
+    .main-feature__responsive__img
+      = image_tag "two-coffee-at-the-shop.jpg", class: "responsive"
+
+  -# SEO最適化
+  .main-feature__responsive
+    .main-feature__responsive__message
+      %p.number 3
+      %h2.responsive SEO最適化
+      %p.responsive Search Engine Optimized
+      %p.text Xeory ExtensionはGoogleのSEOガイドラインに可能な限り沿った構造になっています。必要なのは良質なコンテンツだけです。
+      = link_to "#", class: "responsive" do
+        詳しく見る
+    .main-feature__responsive__img
+      = image_tag "imac-glasses-desk.jpg", class: "responsive"
+
+  -# 高いカスタマイズ性
+  .main-feature__responsive.reverse
+    .main-feature__responsive__message.sidemargin
+      %p.number 4
+      %h2.responsive 高いカスタマイズ性
+      %p.responsive Customizable
+      %p.text Xeory Extensionはカスタマイズフリーです。CSS, HTML, PHP の知識があれば自由にカスタマイズすることができます。
+      = link_to "#", class: "responsive" do
+        詳しく見る
+    .main-feature__responsive__img
+      = image_tag "macbook-holding.png", class: "responsive"
 
 -# サービスの紹介
 .main-service
