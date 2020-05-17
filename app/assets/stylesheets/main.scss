@@ -1,6 +1,53 @@
+@media screen and (max-width: 420px) { 
+  h1.title {
+    width: 100%;
+  }
+  iframe {
+    width: 100%;
+  }
+  p.corporation {
+    width: 50%;
+    margin-right: 0px;
+  }
+  p.phone {
+    width: 50%;
+    margin-right: 0px;
+  }
+  p.address {
+    width: 50%;
+    margin-right: 0px;
+  }
+}
+@media screen and (min-width: 421px) and (max-width: 999px) {
+  img.article {
+    width: 100%;
+  }
+  h1.title {
+    width: 100%;
+  }
+  iframe {
+    width: 100%;
+  }
+  p.corporation {
+    width: 50%;
+    margin-right: 0px;
+  }
+  p.phone {
+    width: 50%;
+    margin-right: 0px;
+  }
+  p.address {
+    width: 50%;
+    margin-right: 0px;
+  }
+}
+@media screen and (min-width:1000px) {
+  
+}
+
 // ヘッダー
 .header {
-  background: mediumaquamarine;
+  background: #4EB39D;
   &__inner {
     display: flex;
     align-items: center;
@@ -34,7 +81,7 @@
 // タイトル
 .main-title {
   padding: 260px 280px 400px 280px;
-  background: turquoise;
+  background: #4DB09B;
   &__conteiner {
     text-align: center;
     margin: 0 122px;
@@ -56,12 +103,12 @@
     background-image: url(bg.png);
     background-size: cover;
     height: 55px;
-    border-top: 1px solid;
+    border-top: 1px solid #E5E5E5;
     }
     &__top {
     display: flex;
-    border-top: 1px solid;
-    border-bottom: 1px solid;
+    border-top: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
     padding: 20px 0;
     justify-content: center;
       i.article {
@@ -110,7 +157,7 @@
           background: black;
           }
           p.color {
-          background: darkturquoise;
+          background: #4EB39D;
           display: table;
           padding: 5px;
           color: whitesmoke;
@@ -138,7 +185,7 @@
     padding-bottom: 20px;
     text-align: center;
     color: white;
-    background: black;
+    background: #3B4552;
     position: relative;
     i.feature {
       font-size: 25px;
@@ -158,7 +205,7 @@
     display: block;
     z-index: 1;
     border-style: solid;
-    border-color: black transparent;
+    border-color: #3B4552 transparent;
     border-width: 30px 90px 0px 90px;
     bottom: -20px;
     left: 44.5%;
@@ -169,32 +216,33 @@
     &__message {
       margin: 0 120px;
       p.number {
-        background: darkcyan;
+        background: #4EB39D;
         display: inline-block;
         padding: 35px 13px 13px 13px;
         color: whitesmoke;
         font-size: 19px;
       }
       h2.responsive {
-        color: darkcyan;
+        color: #4EB39D;
         font-size: 36px;
         margin-top: 17px;
       }
       p.responsive {
-        color: darkcyan;
+        color: #4EB39D;
         font-size: 14px;
       }
       p.text {
         margin-top: 35px;
       }
       a.responsive {
-        background: orangered;
+        background: #EF6A37;
         color: whitesmoke;
         padding: 12px 62px;
         margin-top: 35px;
         display: inline-block;
         font-size: 14px;
         border-radius: 5px;
+        text-decoration: none;
       }
     }
     .sidemargin {
@@ -210,5 +258,427 @@
   }
   .reverse {
     flex-direction: row-reverse;
+    background-color: ghostwhite;
   }
 }
+
+// サービスの紹介
+.main-service {
+  &__head {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: white;
+    background: #3B4552;
+    position: relative;
+    i.service {
+      font-size: 25px;
+      padding: 18px 0;
+    }
+    h3.service {
+      font-size: 28px;
+      margin: 0;
+    }
+    p.service {
+      margin: 0;
+    }
+  }
+  .main-service__head::before {
+    content: '';
+    position: absolute;
+    display: block;
+    z-index: 1;
+    border-style: solid;
+    border-color: #3B4552 transparent;
+    border-width: 30px 90px 0px 90px;
+    bottom: -20px;
+    left: 44.5%;
+    margin-left: -10px;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 50px;
+    &__content {
+      padding-bottom: 90px;
+      text-align: center;
+      width: 100%;
+      margin-top: 105px;
+      h1.Customize {
+        color: #4EB39D;
+        margin-left: 35px;
+      }
+      p.Customize {
+        color: #4EB39D;
+        margin-top: 15px;
+        margin-left: 20px;
+        font-size: 15px;
+      }
+      a.Customize {
+        background: #4EB39D;
+        color: whitesmoke;
+        display: inline-block;
+        border-radius: 5px;
+        padding: 15px 45px;
+        margin: 18px 0px 0px 20px;
+        text-decoration: none;
+      }
+      h1.Consulting {
+        color: #4EB39D;
+      }
+      p.Consulting {
+        color: darkcyan;
+        margin-top: 15px;
+        font-size: 15px;
+      }
+      a.Consulting {
+        background: #4EB39D;
+        color: whitesmoke;
+        display: inline-block;
+        border-radius: 5px;
+        padding: 15px 30px;
+        margin: 17px;
+      }
+    }
+    &__line {
+      border: 1px solid #E5E5E5;
+    }
+  }
+}
+
+// 会社紹介
+.main-company {
+  &__head {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: white;
+    background: #3B4552;
+    position: relative;
+    i.company {
+      transform: rotate(90deg);
+      font-size: 25px;
+      padding: 18px 0;
+    }
+    h3.company {
+      font-size: 28px;
+      margin: 0;
+    }
+    p.company {
+      margin: 0;
+    }
+  }
+  .main-company__head::before {
+    content: '';
+    position: absolute;
+    display: block;
+    z-index: 1;
+    border-style: solid;
+    border-color: #3B4552 transparent;
+    border-width: 30px 90px 0px 90px;
+    bottom: -20px;
+    left: 44.5%;
+    margin-left: -10px;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    &__overview {
+      width: 100%;
+      margin: 100px 40px 0 120px;
+      p.corporation {
+        border-top: 1px solid #E5E5E5;
+        border-bottom: 1px solid #E5E5E5;
+        padding: 16px 0 20px 30px;
+        position: relative;
+        span.overview {
+          margin-right: 85px;
+        }
+      }
+      p.corporation::before {
+        content: "";
+        position: absolute;
+        width: 136px;
+        left: 1px;
+        top: -2px;
+        height: inherit;
+        border-top: 2px solid #4EB39D;
+      }
+      p.phone {
+        border-bottom: 1px solid #E5E5E5;
+        padding: 6px 0 18px 32px;
+        span.phone {
+          margin-right: 66px;
+        }
+        span.number {
+          letter-spacing: 0.11rem;
+        }
+      }
+      p.address {
+        border-bottom: 1px solid #E5E5E5;
+        padding: 7px 0 19px 32px;
+        span.address {
+          margin-right: 100px;
+        }
+      }
+    }
+    &__map {
+      width: 100%;
+      iframe {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// お問い合わせ
+.main-inquiry {
+  &__head {
+    padding-bottom: 20px;
+    text-align: center;
+    color: white;
+    background: #3B4552;
+    position: relative;
+    i.inquiry {
+      transform: rotate(90deg);
+      font-size: 25px;
+      padding: 18px 0;
+    }
+    h3.inquiry {
+      font-size: 28px;
+      margin: 0;
+    }
+    p.inquiry {
+      margin: 0;
+    }
+  }
+  .main-inquiry__head::before {
+    content: '';
+    position: absolute;
+    display: block;
+    z-index: 1;
+    border-style: solid;
+    border-color: #3B4552 transparent;
+    border-width: 30px 90px 0px 90px;
+    bottom: -20px;
+    left: 44.5%;
+    margin-left: -10px;
+  }
+  &__inquiry {
+    background: #4EB39D;
+    text-align: center;
+    padding: 86px 436px 106px 404px;
+    p.name {
+      margin-bottom: 0;
+      color: whitesmoke;
+      margin-left: 33px;
+    }
+    input.name {
+      border-radius: 1px;
+      width: 100%;
+      padding: 4px;
+    }
+    p.mail {
+      margin-bottom: 0;
+      color: whitesmoke;
+      margin-left: 33px;
+      margin-top: 23px;
+    }
+    input.mail {
+      border-radius: 1px;
+      width: 100%;
+      padding: 4px;
+    }
+    p.title {
+      margin-bottom: 0;
+      color: whitesmoke;
+      margin-left: 33px;
+      margin-top: 23px;
+    }
+    input.title {
+      border-radius: 1px;
+      width: 100%;
+      padding: 4px;
+    }
+    p.message {
+      margin-bottom: 0;
+      color: whitesmoke;
+      margin-left: 33px;
+      margin-top: 23px;
+    }
+    textarea.message {
+      height: 200px;
+      width: 100%;
+    }
+    button.inquiry {
+      color: white;
+      background: #141E2B;
+      padding: 12px 80px;
+      border: 1px;
+      border-radius: 5px;
+      margin-top: 18px;
+      margin-left: 33px;
+    }
+  }
+}
+// ページトップボタン
+a.topbtn {
+  // position: fixed;
+  bottom: 30px;
+  right: 50px;
+  font-size: 30px;
+  background: #535353;
+  padding: 1px;
+  border-radius: 30px;
+  width: 48px;
+  opacity: 0.5;
+}
+.main-inquiry__topbtn {
+  padding-left: 13px;
+  i.topbtn {
+    color: white;
+  }
+}
+
+// フッター
+.footer {
+  background: #031831;
+  padding-top: 90px;
+  &__inner {
+    padding-bottom: 75px;
+    &__title {
+      margin-left: 105px;
+      margin-right: 105px;
+      margin-bottom: 32px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid #fff;
+      h3.title {
+        color: #fff;
+        font-size: 25px;
+        margin-left: 14px;
+      }
+    }
+    &__container {
+      display: flex;
+      justify-content: space-around;
+      &__menu {
+        width: 100%;
+        display: flex;
+        &__blog {
+          margin-left: 120px;
+          p.blog {
+            color: #fff;
+            margin: 0;
+          }
+          ul.blog {
+            li.sample {
+              color: #fff;
+              margin-top: 7px;
+              a.sample {
+                color: #fff;
+                font-size: 14px;
+                text-decoration: none;
+              }
+              i.sample {
+                color: #fff;
+                margin-right: 2px;
+              }
+            }
+            li.download {
+              color: #fff;
+              margin-top: 14px;
+              a.download {
+                color: #fff;
+                font-size: 14px;
+                text-decoration: none;
+              }
+              i.download {
+                color: #fff;
+                margin-right: 2px;
+              }
+            }
+          }
+        }
+        &__media {
+          margin-left: 31px;
+          p.media {
+            color: #fff;
+            margin: 0;
+          }
+          ul.media {
+            display: inline-block;
+            li.twitter {
+              color: #fff;
+              margin-top: 7px;
+              a.twitter {
+                color: #fff;
+                text-decoration: none;
+              }
+              i.twitter {
+                color: #fff;
+                font-size: 13px;
+                margin-right: 5px;
+              }
+            }
+            li.facebook {
+              color: #fff;
+              margin-top: 15px;
+              a.facebook {
+                color: #fff;
+                text-decoration: none;
+              }
+              i.facebook {
+                color: #fff;
+                font-size: 14px;
+                margin-right: 6px;
+              }
+            }
+            li.google {
+              color: #fff;
+              margin-top: 14px;
+              a.google {
+                color: #fff;
+                font-size: 16px;
+                text-decoration: none;
+              }
+              i.google {
+                color: #fff;
+                margin-right: 3px;
+              }
+            }
+            li.rss {
+              color: #fff;
+              margin-top: 14px;
+              a.rss {
+                color: #fff;
+                text-decoration: none;
+              }
+              i.rss {
+                color: #fff;
+                font-size: 13px;
+                margin-right: 7px;
+              }
+            }
+          }
+        }
+      }
+      &__facebook {
+        width: 100%;
+        margin-left: 27px;
+        .fb-page {
+          width: 100%;
+        }
+      }
+    }
+  }
+  &__logo {
+    background: #010A17;
+    text-align: center;
+    padding: 29px 0;
+    p.logo {
+      color: white;
+      font-size: 11.5px;
+    }
+  }
+}
+

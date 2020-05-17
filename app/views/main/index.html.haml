@@ -143,12 +143,108 @@
 
 -# サービスの紹介
 .main-service
-
+  .main-service__head
+    =icon("fa","heart", class: "service")
+    %h3.service サービス紹介
+    %p.service service
+  .main-service__inner
+    .main-service__inner__content
+      %h1.Customize Xeoryカスタマイズ
+      %p.Customize Xeory Customize
+      =link_to "#", class: "Customize" do
+        カスタマイズ事例を見る
+    .main-service__inner__line
+    .main-service__inner__content
+      %h1.Consulting コンサルティング
+      %p.Consulting Consulting
+      =link_to "#", class: "Consulting" do
+        コンサルティング事例を見る
+    
 -# 会社紹介
 .main-company
+  .main-company__head
+    =icon("fa","phone", class: "company")
+    %h3.company 会社紹介
+    %p.company company
+  .main-company__inner
+    .main-company__inner__overview
+      %p.corporation 
+        %span.overview 会社名 
+        %span 株式会社ルーシー
+      %p.phone
+        %span.phone 電話番号
+        %span.number 03-1111-2222
+      %p.address
+        %span.address 住所
+        %span 東京都港区西新橋２-７-４ CJビル11階
+    .main-company__inner__map
+      %iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.4149206972006!2d139.75167691528728!3d35.666784138371504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188becbbb525c7%3A0x8ee3d7c4e8731e7a!2z5qCq5byP5Lya56S-44Or44O844K344O8!5e0!3m2!1sja!2sjp!4v1589619755560!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0")
 
 -# お問い合わせ
 .main-inquiry
+  .main-inquiry__head
+    =icon("fa","phone", class: "inquiry")
+    %h3.inquiry お問い合わせ
+    %p.inquiry inquiry
+  .main-inquiry__inquiry
+    %p.name お名前 (必須)
+    %input.name(type="text")/
+    %p.mail メールアドレス (必須)
+    %input.mail(type="text")/
+    %p.title 題名
+    %input.title(type="text")/
+    %p.message メッセージ本文
+    %textarea.message
+    .main-inquiry__inquiry__btn
+      %button.inquiry 送信
+-# スクロールボタン
+=link_to "#", class: "topbtn" do
+  .main-inquiry__topbtn
+    =icon("fa","angle-up", class: "topbtn")
 
 -# フッター
 .footer
+  .footer__inner
+    .footer__inner__title
+      %h3.title XeoryExtension
+    .footer__inner__container
+      .footer__inner__container__menu
+        .footer__inner__container__menu__blog
+          %p.blog ブログコンテンツ
+          %ul.blog
+            %li.sample
+              =icon("fa","angle-right", class: "sample")
+              =link_to "#", class: "sample" do
+                記事ページサンプル
+            %li.download
+              =icon("fa","angle-right", class: "download")
+              =link_to "#", class: "download" do
+                Extensionをダウンロード
+        .footer__inner__container__menu__media
+          %p.media ソーシャルメディア
+          %ul.media
+            %li.twitter
+              =link_to "#", class: "twitter" do
+                =icon("fa","twitter", class: "twitter")
+                Twitter
+            %li.facebook
+              =link_to "#", class: "facebook" do
+                =icon("fa","facebook-square", class: "facebook")
+                Facebook
+            %li.google
+              =link_to "#", class: "google" do
+                =icon("fa","google", class: "google")
+                Google+
+            %li.rss
+              =link_to "#", class: "rss" do
+                =icon("fa","rss-square", class: "rss")
+                Feedly
+      .footer__inner__container__facebook
+        .fb-page{"data-adapt-container-width" => "true", "data-height" => "170", "data-hide-cover" => "false", "data-href" => "https://www.facebook.com/BazuBu/?epa=SEARCH_BOX", "data-show-facepile" => "false", "data-small-header" => "true", "data-tabs" => "timeline", "data-width" => "610"}
+ 
+
+
+
+
+  .footer__logo
+    %p.logo © Copyright 2020 XeoryExtension. All rights reserved.
